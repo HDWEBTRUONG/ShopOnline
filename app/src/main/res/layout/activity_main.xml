@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        >
+        <LinearLayout
+            android:layout_marginTop="180dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtGioHang"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:text="Giỏ hàng"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <View
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/txtSanPhamYeuThich"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:text="Sản phẩm yêu thích"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <View
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/txtThongTinCaNhan"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:text="Thông tin cá nhân"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <View
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txtAdmin"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:text="Giành cho Admin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <View
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:text="Góp ý"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <View
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/txtDangXuat"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:text="Đăng xuất"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <View
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.pctruong.appbanhang.view.Activity.ActivityBinhLuan">
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        >
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:text="Bình luận sản phẩm" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_weight="1"
+        android:id="@+id/rvComment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_weight="3.2"
+        android:layout_below="@+id/rvComment"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:background="@drawable/background_btn_borther_gray"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/edt_comment"
+                android:layout_toRightOf="@+id/imgRating"
+                android:layout_width="300dp"
+                android:layout_height="50dp" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/edt_comment"
+                android:id="@+id/img_send"
+                android:src="@drawable/icon_share_page"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <RatingBar
+            android:id="@+id/rbComment"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            style="@style/StarRatingBar"
+            android:clickable="true"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

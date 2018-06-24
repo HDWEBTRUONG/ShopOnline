@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "644213186737",
+    "firebase_url": "https://appbanhang-eda09.firebaseio.com",
+    "project_id": "appbanhang-eda09",
+    "storage_bucket": "appbanhang-eda09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644213186737:android:214589a5eaaa325c",
+        "android_client_info": {
+          "package_name": "com.example.pctruong.appbanhang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644213186737-m5qs0fg0id12f57vt0a2k2qp1vgj12hj.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "644213186737-m5qs0fg0id12f57vt0a2k2qp1vgj12hj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJiOKVAF9GgBzMZUzq85LlgJK0kg6Ie4M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
